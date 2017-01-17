@@ -6,7 +6,7 @@ import { PeopleListComponent } from './people-list.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ AppComponent, PeopleListComponent ], 
+  declarations: [ AppComponent, PeopleListComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
