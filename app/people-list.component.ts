@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from './person';
 import { PeopleService } from './people.service';
+import { PersonDetailsComponent } from './person-details.component';
 
 @Component({
     selector: 'people-list',
@@ -13,11 +14,7 @@ import { PeopleService } from './people.service';
         </li>
     </ul>
 
-    <section *ngIf="selectedPerson">
-        <h2> {{selectedPerson.name}} </h2>
-        <p>{{selectedPerson.name}} weighs {{selectedPerson.weight}}
-         and is {{selectedPerson.height}} tall. </p>
-    </section>
+    <person-details [person]="selectedPerson"></person-details>
     `
 })
 
