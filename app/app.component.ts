@@ -5,7 +5,7 @@ import { PeopleService } from './people.service';
     selector: 'my-app',
     template: `
     <h1>{{title}}</h1>
-    <people-list>
+    <router-outlet></router-outlet>
     `,
     providers: [PeopleService]
 })

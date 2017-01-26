@@ -20,7 +20,7 @@ import { PersonDetailsComponent } from './person-details.component';
 
 export class PeopleListComponent implements OnInit {
     people: Person[] = [];
-    selectedPerson : Person;
+    selectedPerson: Person;
 
     constructor(private _peopleService : PeopleService) { }
 
@@ -28,7 +28,7 @@ export class PeopleListComponent implements OnInit {
         this.people = this._peopleService.getAll();
     }
 
-    selectPerson(person : Person) {
+    selectPerson(person: Person) {
         this.selectedPerson = person;
     }
 }
